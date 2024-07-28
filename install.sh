@@ -18,6 +18,8 @@ rm -rf Lilith-Docker
 
 mkdir ~/.container/lilith/launcher
 
+echo "Downloading the Lilith ..."
+
 wget https://github.com/lilithmod/launcher/releases/download/stable-3/lilith-launcher-linux-s3
 mv ~/Downloads/lilith-launcher-linux-s3 ~/.container/lilith/launcher/lilith-launcher && chmod 770 ~/.container/lilith/launcher/lilith-launcher
 
