@@ -6,7 +6,7 @@ sudo docker compose up -d
 
 
 if [ -z "$( ls -A ~/.container/lilith/ssl/ )" ]; then
-   echo "installing ... "
+   echo "Installing ... "
    echo "Please wait a few moments."
 
    #At the moment, Ubuntu does not have ca-certificates installed, so it will be installed at the first timeAt the moment, Ubuntu does not have ca-certificates installed, so it will be installed at the first time.
