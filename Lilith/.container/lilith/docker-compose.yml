@@ -4,7 +4,8 @@ services:
     image: ubuntu
     volumes:
       - ./launcher/:/lilith/
-      - ./config/:/root/
+      - ./config/LilithLauncher/:/root/LilithLauncher/
+      - ./config/lilith/:/root/lilith/
       - ./ssl/:/etc/ssl
     tty: true
     deploy:
