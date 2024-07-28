@@ -18,10 +18,9 @@ rm -rf Lilith-Docker
 
 mkdir ~/.container/lilith/launcher
 
+wget https://github.com/lilithmod/launcher/releases/download/stable-3/lilith-launcher-linux-s3
+mv ~/Downloads/lilith-launcher-linux-s3 ~/.container/lilith/launcher/lilith-launcher && chmod 770 ~/.container/lilith/launcher/lilith-launcher
+
 echo "--------------------------"
 echo "Installation finished!"
-echo " "
-echo "You need to provide the lilith launcher file."
-echo 'The file should be inserted in ~/.container/lilith/launcher/ and renamed to "lilith-launcher".'
-echo 'You can do this with the command "mv ~/Downloads/lilith-launcher-linux-s3 ~/.container/lilith/launcher/lilith-launcher && chmod 770 ~/.container/lilith/launcher/lilith-launcher", but please download the file first (https://lilith.rip/download)!'
 echo "--------------------------"
