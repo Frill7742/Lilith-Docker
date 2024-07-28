@@ -9,7 +9,7 @@ if [ -z "$( ls -A ~/.container/lilith/ssl/ )" ]; then
    echo "Installing ... "
    echo "Please wait a few moments."
 
-   #At the moment, Ubuntu does not have ca-certificates installed, so it will be installed at the first timeAt the moment, Ubuntu does not have ca-certificates installed, so it will be installed at the first time.
+   #At the moment, Ubuntu does not have ca-certificates installed, so it will be installed at the first time of installation.
    sudo docker exec -it lilith-lilith-1 apt-get update >> /dev/null
    sudo docker exec -it lilith-lilith-1 apt-get install -y --no-install-recommends ca-certificates >> /dev/null
    sudo docker exec -it lilith-lilith-1 update-ca-certificates >> /dev/null
