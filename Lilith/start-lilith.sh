@@ -12,4 +12,10 @@ else
    echo "ca certificates are installed."
 fi
 
+IP=`sudo docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' lilith-lilith-1`
+
+echo "---------------"
+echo "IP: ${IP}"
+echo "---------------"
+
 sudo docker exec -t lilith-lilith-1 /lilith/lilith-launcher
