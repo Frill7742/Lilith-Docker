@@ -9,7 +9,7 @@ if [ -z "$( ls -A '/home/{user}/.container/lilith/ssl/' )" ]; then
    sudo docker exec -it lilith-lilith-1 apt-get install -y --no-install-recommends ca-certificates
    sudo docker exec -it lilith-lilith-1 update-ca-cerificates
 else
-   echo "Not Empty"
+   echo "ca certificates are installed."
 fi
 
-sudo docker exec -t lilith-lilith-1 /lilith/lilith-launcher-linux-s3
+sudo docker exec -t lilith-lilith-1 /lilith/lilith-launcher
