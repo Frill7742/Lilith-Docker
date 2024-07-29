@@ -6,11 +6,12 @@ git clone https://github.com/Frill7742/Lilith-Docker.git
 
 cd Lilith-Docker/Lilith/
 
-cp -r .container ~
-chmod -R 777 ~/.container 
+cp -r .container ~ && chmod -R 777 ~/.container 
 
-cp start-lilith.sh ~/Documents/ && cp stop-lilith.sh ~/Documents/
-chmod 700 ~/Documents/start-lilith.sh && chmod 700 ~/Documents/stop-lilith.sh
+cp start-lilith.sh ~/Documents/ && chmod 700 ~/Documents/start-lilith.sh 
+
+cp stop-lilith.sh ~/Documents/ && chmod 700 ~/Documents/stop-lilith.sh
+
 
 cd ../..
 
